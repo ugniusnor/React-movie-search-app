@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
+
+.homePage {
+    margin-top: -10vh;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/bg-home.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.home-container {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+}
+.homePage h1, .homePage h2 {
+    z-index: 2;
+    color:white;
+    font-size: 90px;
+    margin: 10px;
+    text-shadow: 2px 1px white;
+    font-family: 'Montserrat', sans-serif;
+}
+.homePage p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 45px;
+    z-index: 2;
+    text-shadow: 1px 1px white;
+
+}
+.button-register {
+    background-color: red;
+    width: 280px;
+    height: 90px;
+    padding: 5px 10px;
+    margin: 50px;
+    font-weight: 600;
+    color: white;
+    font-size: 25px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(65, 63, 63, 0.7);
+    
+}
+@media (max-width:1200px) {
+    .homePage h1, .homePage h2 {
+      font-size: 60px;
+    }
+    .homePage p {
+        font-size: 25px;
+    }
+}
+@media (max-width:750px) {
+    .homePage h1, .homePage h2 {
+      font-size: 48px;
+    }
+    .homePage p {
+        font-size: 20px;
+    }
+}
+@media (max-width:500px) {
+    .homePage h1, .homePage h2 {
+      font-size: 39px;
+    }
+    .homePage p {
+        font-size: 20px;
+    }
+    .button-register {
+        width: 200px;
+        height:60px;
+        padding:0;
+        font-size: 20px;
+
+    }
+}

@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
 }
 .signup-form {
@@ -14,6 +15,9 @@
     flex-direction: column;
     height: 500px;
     width: 100%;
+}
+.signup-form > h1 {
+    margin-bottom: 50px;
 }
 .signup-form input {
     width: 80%;
@@ -34,5 +38,38 @@
     border: none;
     box-shadow: 1px 1px 1px 1px 5px rgb(226, 218, 218);
     border-radius: 40px;
+    cursor: pointer;
 }
 .signup-button:hover {    background-color: rgba(77, 76, 76,0.95);}
+
+.error-message {
+width: 100%;
+max-width: 600px;
+font-size: 30px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-direction: row;
+
+}
+.signup-container .error-sign {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+}
+@media(max-width:500px) {
+    .error-message {
+        font-size: 20px;
+    }
+    .signup-container .error-sign {
+        width: 30px;
+        height: 30px;
+        margin: 0 15px;
+    }
+}

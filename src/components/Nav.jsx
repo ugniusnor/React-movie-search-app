@@ -16,7 +16,7 @@ export default function Nav () {
             <Link to='/login'>
             <li> Login</li>
             </Link>
-            <Link to="/register">
+            <Link to="/signup">
             <li> Register</li>
             </Link>
             <Link to='/search'>

@@ -2,11 +2,13 @@ import React from "react";
 import  Nav from "./components/Nav";
 import Home from "./Home"
 import SearchComponent from "./components/SearchMovie";
-import Login from "./Login";
+import Login from "./components/login";
 import Register from "./Register"
 import SingleMovie from "./components/SingleMovie"
 import Signup from "./components/signUp"
+import ProfilePage from "./components/Profile"
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
 function App() {
   return (
     <>
@@ -18,7 +20,8 @@ function App() {
       <Route path="/register" component={Register}/>
       <Route path="/search" component={SearchComponent}/>``
       <Route path="/movie/:id" component={SingleMovie}/>
-      <Route path="/signup" component={Signup}/> 
+      <Route path="/signup" component={Signup}/>
+      <Route path="/profile" component={ProfilePage}/>
       </Switch>
      
   
