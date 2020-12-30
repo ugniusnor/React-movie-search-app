@@ -3,7 +3,6 @@ import  Nav from "./components/Nav";
 import Home from "./Home"
 import SearchComponent from "./components/SearchMovie";
 import Login from "./components/login";
-import Register from "./Register"
 import SingleMovie from "./components/SingleMovie"
 import Signup from "./components/signUp"
 import ProfilePage from "./components/Profile"
@@ -17,7 +16,6 @@ function App() {
       <Switch>
       <Route path="/" exact component={Home}/>
       <Route path="/login" component={Login}/>
-      <Route path="/register" component={Register}/>
       <Route path="/search" component={SearchComponent}/>``
       <Route path="/movie/:id" component={SingleMovie}/>
       <Route path="/signup" component={Signup}/>
